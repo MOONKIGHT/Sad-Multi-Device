@@ -19,7 +19,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
         quality = video.quality
         console.log(video)
         isLimit = video.fileSize > limitedSize
-        if (isLimit && /1080p/.test(quality) || !quality.includes(opt)) continue
+        if (isLimit && /360p/.test(quality) || !quality.includes(opt)) continue
         link = await video.download()
         // if (isLimit) return conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: `*Title:* ${title}\n*Link:* ${await shortUrl(link)}\n\n_Filesize too big_` }, { quoted: m })
         if (link) break

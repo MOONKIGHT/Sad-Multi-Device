@@ -9,7 +9,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: 'AUDIO',
 body: 'Sad-Bot',         
 previewType: 0, thumbnail: fs.readFileSync("./thumbnail.jpg"),
-sourceUrl: `https://github.com/FahriAdison/Sad-Multi-Device`}}})
+sourceUrl: `kkk`}}})
 let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
 let json = await res.json()
 conn.sendFile(m.chat, json.result.url, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
